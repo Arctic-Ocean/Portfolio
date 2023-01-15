@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=La+Belle+Aurore&display=swap');
+
+body {
+    background: rgb(221, 175, 100)/*linear-gradient(-45deg, black,darkblue,white)*/;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    margin: 0;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.topbutton {
+    width: 200px; 
+    height: 100px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-family: 'La Belle Aurore', cursive;
+    border-radius: 20%;
+}
+
+
+.blog{
+    background: url(naver.jpg);
+}
+.insta{
+    background: url(instargram.jpg);
+}
+.git{
+    background: url(github.jpg);
+}
+.sns{
+  margin-top: -100px;
+  margin-left: 95%;
+    height: 50px;
+    border-radius: 100%; 
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.UI{
+  background-color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  justify-content: space-evenly;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+}
+.M{
+  flex-direction: column;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+ background-image: url(menu.svg);
+ background-size: contain;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Nanum Pen Script', cursive;
+ 
+}
+.M:hover ~.UI{
+  opacity: 1;
+  visibility: visible;
+  border-radius: 5%;
+  z-index: 10;
+}
+.UI:hover{
+  opacity: 1;
+  visibility: visible;
+  border-radius: 10px;
+  z-index: 10;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+}
+#vid{
+
+  width: 465px;
+  height: 403px;
+   display: flex;
+   align-items: flex-start;
+
+}
+.Introduceyourself{
+  font-size: 50px;
+  opacity: 0.5;
+}
+
+.linkBtns{
+  position: fixed;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  right: 80px;
+  bottom: 10px;
+}
+
+h3{
+  text-align: center;
+}

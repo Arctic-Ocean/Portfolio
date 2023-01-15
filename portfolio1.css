@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=La+Belle+Aurore&display=swap');
+/*
+body {
+    background: linear-gradient(-45deg, black,darkblue,white);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    margin: 0;
+  }
+*/
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } 
+.navbutton2 {
+    text-decoration: none;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(8deg, red 5%,rgb(255, 157, 0) 10%,rgb(255, 242, 0) 15%,rgb(111, 255, 0) 20%,rgb(0, 255, 17) 25%,rgb(0, 255, 85) 30%,rgb(0, 255, 191) 35%,rgb(0, 217, 255) 40%,rgb(0, 140, 255) 45%,rgb(0, 34, 255) 50%,rgb(51, 0, 255) 55%,rgb(111, 0, 255) 60%,rgb(204, 0, 255) 65%,rgb(255, 0, 251) 70%,rgb(255, 0, 157) 75%,rgb(255, 0, 166) 80%,rgb(255, 0, 123) 85%,rgb(255, 0, 38) 90%,rgb(255, 0, 21) 95%,rgb(255, 0, 0) 100%);
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 50px;
+    /* border: 5px solid rgb(255, 255, 255); */
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+.navbutton a{
+    text-decoration: none;
+    color: white;
+}
+.text{
+    color: blue;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+#date{
+    background-image: url(png/date.png);
+}
+#flex{
+    background-image: url(png/20221225_181055.png);
+}
+#moon{
+    background-image: url(png/moon1.png);
+}
+#page1{
+    background-image: url(png/page.png);
+}
+#pong{
+    background-image: url(png/pong.png);
+}
+#snake{ 
+    background-image: url(png/snake.png);
+}
+.img{
+    width: 100%;
+    background-size: cover;
+    height: 22.5vw;
+    /* border: 5px solid white; */
+    background-position: center;
+    transition: 0.5s;
+}
+.item a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.title{
+    position: absolute;
+    color: white;
+    opacity: 0;
+    font-size: 50px;
+    transition: 0.5s;
+}
+.img:hover{
+    filter: brightness(50%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.05);
+}
+.img:hover ~ .title{
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+}
+#A-Main a{
+    font-size: 80px;
+    color: white;
+}
