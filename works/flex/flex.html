@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+<div id="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+<div class="UI">
+    <h2>FLex</h2>
+    <div>
+        <h3>FLex-Direction</h3>
+        <input type="radio" name="fd" id="fd-row" checked>
+        <label>row</label><br>
+        <input type="radio" name="fd" id="fd-rowrev" >
+        <label>row-reverce</label><br>
+        <input type="radio" name="fd" id="fd-col" >
+        <label>column</label><br>
+        <input type="radio" name="fd" id="fd-colrev" >
+        <label>column-reverce</label><br>
+    </div>
+    <div>
+        <div>
+            <h3>Justify-Content</h3>
+            <input type="radio" name="jc" id="jc-flexstart" checked>
+            <label>flex-start</label><br>
+            <input type="radio" name="jc" id="jc-flexend" >
+            <label>flex-end</label><br>
+            <input type="radio" name="jc" id="jc-center" >
+            <label>center</label><br>
+            <input type="radio" name="jc" id="jc-sbetween" >
+            <label>space-between</label><br>
+            <input type="radio" name="jc" id="jc-saround" >
+            <label>space-around</label><br>
+            <input type="radio" name="jc" id="jc-sevenly" >
+            <label>space-evenly</label><br>
+         
+        </div>
+        <div>
+            <h3>Align-Items</h3>
+            <input type="radio" name="ai" id="ai-stretch" checked>
+            <label>stretch</label><br>
+            <input type="radio" name="ai" id="ai-flexstart" >
+            <label>flex-start</label><br>
+            <input type="radio" name="ai" id="ai-center" >
+            <label>center</label><br>
+            <input type="radio" name="ai" id="ai-flexend" >
+            <label>flex-end</label><br>
+            <input type="radio" name="ai" id="ai-baseline" >
+            <label>baseline</label><br>
+         
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="flex.js"></script>
+</body>
+</html>

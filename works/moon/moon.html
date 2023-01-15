@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moooooooooooooooooon</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+
+<body>
+    <div class="moon" id="moon">
+        <div class="star-container" id="s1">
+            <div class="shootingStar" style="top: 200px; left: 200px;"></div>
+            <div class="star" style="top: 100px; left :40px"></div>
+            <div class="star" style="top: 250px; left :40px"></div>
+            <div class="star" style="top: 180px; left :40px"></div>
+        </div>
+        <div class="star-container" id="s2">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+    <div class="yellow"></div>
+    <div class="shadow"></div>
+    <script>
+        var starContainer1 = document.getElementById('s1')
+        var starContainer2 = document.getElementById('s2')
+        var moon = document.getElementById('moon');
+
+        for (var i = 0; i < 500; i++) {
+            const star1 = document.createElement('div')
+            const star2 = document.createElement('div')
+
+            var topV = Math.floor(Math.random() * 400) + 'px';
+            var leftV = Math.floor(Math.random() * 400) + 'px';
+
+            star1.style.top = topV;
+            star2.style.top = topV;
+            star1.style.left = leftV;
+            star2.style.left = leftV;
+
+            star1.className = 'star';
+            star2.className = 'star';
+
+            starContainer1.appendChild(star1);
+            starContainer2.appendChild(star2);
+        }
+        for (var i = 0; i < 10; i++) {
+            const shootingStar = document.createElement('div');
+
+            var topV = Math.floor(Math.random() * 400) + 'px';
+            var leftV = Math.floor(Math.random() * 400) + 'px';
+
+            shootingStar.style.top = topV
+            shootingStar.style.left = leftV
+        shootingStar.classList = 'shootingStar';
+         var delayV = Math.random() * 5 + 's';
+         shootingStar.style.animationDelay = delayV
+         moon.appendChild(shootingStar);
+        }
+    </script>
+</body>
+
+</html>

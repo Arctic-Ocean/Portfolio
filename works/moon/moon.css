@@ -1,0 +1,93 @@
+body {
+height: 100vh;
+ margin: 0;
+padding: 0;
+background-color: yellow;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.moon {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(2, 2, 70);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.yellow {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(180px);
+}
+.star-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+animation-name: move;
+animation-duration: 5s;
+
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.star {
+    width: 1px;
+    height: 1px;
+background-color: white;
+position: absolute;
+
+}
+.shootingStar {
+    width: 1px;
+    height: 20px;
+    background: linear-gradient(lightblue, transparent);
+    transform: rotate(215deg);
+    position: absolute;
+    animation-name: shoot;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+#s2{
+    left: 400px;
+}
+@keyframes move {
+    0% {
+    transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-400px);
+    }
+
+}
+@keyframes shoot {
+    0% {
+        transform: rotate(215deg);
+        opacity: 0;
+    }
+    10% {
+        transform: translate(-20px, 20px) rotate(215deg) ;
+        opacity: 1;
+    }
+    20% {
+        transform: translate(-20px, 20px) rotate(215deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-20px, 20px) rotate(215deg);
+        opacity: 0;
+    }
+}
+.shadow{
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    background-color: black;
+    opacity: 0.2;
+    border-radius: 50%;
+    transform: translate(-50px, 200px);
+}
